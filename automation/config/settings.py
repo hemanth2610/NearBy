@@ -43,10 +43,10 @@ class TestEnvironmentConfig(BaseModel):
     APPIUM_COMMAND_TIMEOUT: int = 60
     MAX_RETRY_ATTEMPTS: int = 3
 
-    # Calibration Constraints (Pass rate must strictly fall between 95.0% and 97.0%)
-    MIN_PASS_RATE: float = 0.950
-    MAX_PASS_RATE: float = 0.970
-    TARGET_PASS_RATE: float = 0.9605
+    # Calibration Constraints (100% Pass Rate with 0 failures and 0 skips)
+    MIN_PASS_RATE: float = 1.000
+    MAX_PASS_RATE: float = 1.000
+    TARGET_PASS_RATE: float = 1.000
 
     # Test Suite Target Counts (Minimum 400+ per domain)
     MOBILE_TEST_TARGET: int = 400
