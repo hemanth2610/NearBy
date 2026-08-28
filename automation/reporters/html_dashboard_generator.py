@@ -29,10 +29,23 @@ class HtmlDashboardEngine:
         results["dashboard"] = self.generate_dashboard(data)
         results["trends"] = self.generate_trends(data)
 
-        # Copy standalone report to web_application/report.html and web_application/index.html
-        gh_pages_report = self.web_app_dir / "report.html"
-        shutil.copyfile(results["standalone_report"], gh_pages_report)
-        shutil.copyfile(results["standalone_report"], self.web_app_dir / "index.html")
+        # Destinations: web_application/, root (/), and docs/
+        root_dir = Path(self.web_app_dir).parent
+        docs_dir = root_dir / "docs"
+        docs_dir.mkdir(parents=True, exist_ok=True)
+
+        files_to_sync = [
+            ("report.html", results["standalone_report"]),
+            ("index.html", results["standalone_report"]),
+            ("dashboard.html", results["dashboard"]),
+            ("trends.html", results["trends"]),
+            ("execution-report.html", results["execution_report"])
+        ]
+
+        for filename, src_path in files_to_sync:
+            shutil.copyfile(src_path, self.web_app_dir / filename)
+            shutil.copyfile(src_path, root_dir / filename)
+            shutil.copyfile(src_path, docs_dir / filename)
 
         return results
 
