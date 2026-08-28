@@ -1,0 +1,1 @@
+import{l as e}from"./utils-BdatOYwG.js";import{E as t}from"./vendor-react-Xxqe9L4J.js";import{d as n,n as r}from"./DialogTitle-BMLUOjs5.js";var i=e(t(),1);function a(e){return r(e,i.useContext(n)?`drawer`:`dialog`)}export{a as t};

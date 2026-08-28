@@ -1,0 +1,1 @@
+import{t as e}from"./client-DMbxHbn-.js";var t={uploadImage:async(t,n)=>{let r=new FormData;return r.append(`file`,t),(await e.post(`/uploads/image`,r,{headers:{"Content-Type":`multipart/form-data`},onUploadProgress:e=>{e.total&&n&&n(Math.round(e.loaded*100/e.total))}})).data.data}};export{t};

@@ -1,0 +1,1 @@
+import{l as e}from"./utils-BdatOYwG.js";import{E as t}from"./vendor-react-Xxqe9L4J.js";import{h as n,m as r}from"./button-1fVjHMUN.js";var i=e(t(),1);function a(e,t){let a=i.useRef(e),o=n(t);r(()=>{a.current!==e&&o(a.current)},[e,o]),r(()=>{a.current=e},[e])}export{a as t};

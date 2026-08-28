@@ -1,0 +1,1 @@
+import{c as e}from"./vendor-react-Xxqe9L4J.js";import{t}from"./places.service-BZ5FPqpU.js";var n=/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i,r=r=>e({queryKey:[`place`,r],queryFn:async()=>r?n.test(r)?t.getPlaceByUuid(r):t.getPlaceBySlug(r):null,enabled:!!r,staleTime:1e3*60*5});export{r as t};

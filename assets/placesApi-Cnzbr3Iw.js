@@ -1,0 +1,1 @@
+import{n as e}from"./authStore-8L2HCj1x.js";var t={getPlaces:async t=>(await e.get(`/places`,{params:t})).data,getPlaceBySlugOrUuid:async t=>{let n=await e.get(`/places/${t}`);return n.data.data||n.data}};export{t};

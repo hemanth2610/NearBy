@@ -1,0 +1,1 @@
+import{c as e}from"./vendor-react-Xxqe9L4J.js";import{t}from"./users.service-Bp0-9iVB.js";import{t as n}from"./reviews.service-CLv3pWf8.js";var r=(t=1,r=20)=>e({queryKey:[`userReviews`,t,r],queryFn:()=>n.getUserReviews(t,r),staleTime:1e3*60*2}),i=()=>e({queryKey:[`userStats`],queryFn:()=>t.getUserStats(),staleTime:1e3*60*2});export{i as n,r as t};

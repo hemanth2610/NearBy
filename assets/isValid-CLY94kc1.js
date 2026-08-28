@@ -1,0 +1,1 @@
+import{o as e}from"./parseISO-CPz4el_P.js";function t(e){return e instanceof Date||typeof e==`object`&&Object.prototype.toString.call(e)===`[object Date]`}function n(n){return!(!t(n)&&typeof n!=`number`||isNaN(+e(n)))}export{n as t};

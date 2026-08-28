@@ -1,0 +1,1 @@
+import"./utils-BdatOYwG.js";import{E as e,d as t}from"./vendor-react-Xxqe9L4J.js";import{t as n}from"./RecentActivityFeed-DwMuEJSx.js";e();var r=t(),i=()=>(0,r.jsx)(`div`,{className:`space-y-6`,children:(0,r.jsx)(n,{})});export{i as ActivityLogsPage,i as default};

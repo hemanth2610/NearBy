@@ -1,0 +1,1 @@
+import{t as e}from"./client-DMbxHbn-.js";var t={getMe:async()=>(await e.get(`/users/me`)).data.data,updateMe:async t=>(await e.patch(`/users/me`,t)).data.data,changePassword:async t=>{await e.post(`/users/me/change-password`,t)},getUserStats:async()=>(await e.get(`/users/me/stats`)).data.data};export{t};

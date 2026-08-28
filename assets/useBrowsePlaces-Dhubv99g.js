@@ -1,0 +1,1 @@
+import{c as e}from"./vendor-react-Xxqe9L4J.js";import{t}from"./placesApi-Cnzbr3Iw.js";function n(n={}){return e({queryKey:[`browse-places`,n],queryFn:()=>t.getPlaces(n),staleTime:300*1e3})}export{n as t};

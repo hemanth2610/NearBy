@@ -1,0 +1,1 @@
+import"./utils-BdatOYwG.js";import{E as e,d as t}from"./vendor-react-Xxqe9L4J.js";e();var n=t(),r=({children:e,className:t=``})=>(0,n.jsx)(`div`,{className:`mx-auto w-full max-w-[1600px] px-6 lg:px-8 xl:px-10 2xl:px-12 py-8 space-y-8 animate-in fade-in duration-300 ${t}`,children:e});export{r as t};

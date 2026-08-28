@@ -1,0 +1,1 @@
+var e=e=>e?e.startsWith(`http://`)||e.startsWith(`https://`)||e.startsWith(`/uploads/`)?e:e.startsWith(`uploads/`)?`/${e}`:e:``;export{e as t};
